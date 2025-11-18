@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+}
+
+#mainBody {
+  background-color: black;
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainCon {
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./pic/world.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.btn-controller {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+
+#flow {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+}
+
+#load {
+  margin-bottom: 5%;
+}
+
+#codeKiller {
+  width: 100%;
+  height: 100%;
+}
+
+.bordGrid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.newGameGrid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, .5fr);
+  grid-template-rows: repeat(10, .5fr);
+}
+
+.raceGrid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, .5fr);
+  grid-template-rows: repeat(6, .5fr);
+}
+
+/* Die's */
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 8px 15px 0px rgba(0, 0, 0, 0.15);
+  border: whitesmoke 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+}
+
+/* End OF Game */
+
+:root {
+  --shadow: #4f47fd;
+}
+
+#name {
+  font-family: segoe script;
+  text-shadow: 1px 1px 2px rgb(141, 255, 249), 0 0 1em blue, 0 0 0.2em var(--shadow);
+  color: navy;
+}
+
+#container {
+  width: 95%;
+  height: 80%;
+  position: relative;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+#animate {
+  width: 100px;
+  height: 100px;
+  margin-left: 40%;
+  position: absolute;
+  background-color: red;
+}
